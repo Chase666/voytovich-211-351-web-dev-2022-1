@@ -58,3 +58,9 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.main-menu a{
+  text-decoration: none;
+  color: darkcyan;
+  
+}
