@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="main-menu">
+        <div>
             <nav class="main-menu">
                 <a href="authform.html">Аутентификация</a>
             </nav>
@@ -23,7 +23,7 @@
             <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
                 <div>
                     <label for="fio">ФИО</label>
-                    <input type="text" name="fio" id="fio" placeholder="Введите ФИО">
+                    <input type="text" name="fio" id="fio" placeholder="Введите ФИО" required>
                 </div>
                 <div>
                     <label for="email">Адрес электронной почты</label>
@@ -51,8 +51,8 @@
                     </select>
                 </div>
                 <div>
-                    <label for="">Текст обращения</label>
-                    <textarea name="msg" id="msg"></textarea>
+                    <label for="msg">Текст обращения</label>
+                    <textarea name="msg" id="msg" required></textarea>
                 </div>
                 <div>
                     <label for="attachment">Вложение</label>
@@ -60,7 +60,7 @@
 
                 </div>
                 <div>
-                    <input type="checkbox" name="agreement" id="agreement" value="true">
+                    <input type="checkbox" name="agreement" id="agreement" value="true" required>
                     <label for="agreement">Согласен с обработкой данных</label>
                 </div>
                 <button class="btn" type="submit">Отправить</button>

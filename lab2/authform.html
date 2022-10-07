@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Форма аунтефикации</title>
+    <title>Форма аутентификации</title>
 </head>
 
 <body class="backgroundimg">
@@ -16,12 +16,12 @@
             <div class="container">
                 <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
                     <div>
-                        <label for="fio">Логин</label>
-                        <input type="text" name="log" id="log" placeholder="Введите логин">
+                        <label for="log">Логин</label>
+                        <input type="text" name="log" id="log" placeholder="Введите логин" required>
                     </div>
                     <div>
-                        <label for="fio">Пароль</label>
-                        <input type="password" name="pass" id="pass" placeholder="Введите пароль">
+                        <label for="pass">Пароль</label>
+                        <input type="password" name="pass" id="pass" placeholder="Введите пароль" required>
                     </div>
                     <div>
                         <input type="checkbox" name="remember-me" id="remember-me" value="true">
