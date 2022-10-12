@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Заявка на аредну</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex direction-column">
+            <nav class="main-menu" style="flex-grow: 1;">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rent.html">Арендовать</a></li>
+                    <li><a href="about.html">Условия аренды</a></li>
+                </ul>
+            </nav>
+            <div class="profile" style="margin-left: auto;">
+                <a href=""> <img src="images/bmw_logo.png" alt="product"
+                        style="height: 45px; width: 45px; margin-top: 7px;"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="request-header">Заявка на аренду</h1>
+            <div class="request">
+                <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
+                    <div>
+                        <label for="fio">ФИО</label>
+                        <input type="text" name="fio" id="fio" placeholder="Введите ФИО" required>
+                    </div>
+                    <div>
+                        <label for="email">Номер телефона</label>
+                        <input type="text" name="email" id="email" placeholder="+7**********" required>
+                    </div>
+                    <div>
+                        <label for="car">Автомобиль</label>
+                        <select name="car" id="car" required>
+                            <option value="1">BMW M8</option>
+                            <option value="2">MB CLS63</option>
+                            <option value="2">MB GLE63</option>
+                            <option value="2">Porsche 911</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="days">Суток аренды</label>
+                        <input type="text" name="days" id="days" placeholder="1-15" required>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="agreement" id="agreement" value="true" required>
+                        <label for="agreement">Согласен с обработкой данных</label>
+                    </div>
+
+                    <button class="subm" type="submit"><a class="buy">Создать заявку</a></button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2022 ООО "RENTCAR"
+        </div>
+    </footer>
+</body>
+
+</html>

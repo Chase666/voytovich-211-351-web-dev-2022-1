@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда автомобилей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="print" href="print.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex direction-column">
+            <nav class="main-menu" style="flex-grow: 1;">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rent.html">Арендовать</a></li>
+                    <li><a href="about.html">Условия аренды</a></li>
+                </ul>
+            </nav>
+            <div class="profile" style="margin-left: auto;">
+                <a href=""> <img src="images/bmw_logo.png" alt="product"
+                        style="height: 45px; width: 45px; margin-top: 7px;"></a>
+            </div>
+        </div>
+
+    </header>
+    <main class="container d-flex">
+        <aside class="sidebar">
+            <form>
+
+                <fieldset class="sidebar-section">
+                    <legend>Марка машины</legend>
+                    <div>
+                        <input type="checkbox" value="manufacturer1" name="manufacturer" id="manufacturer1">
+                        <label for="manufacturer1">BMW</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="manufacturer2" name="manufacturer" id="manufacturer2">
+                        <label for="manufacturer2">Mercedes-Benz</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="manufacturer3" name="manufacturer" id="manufacturer3">
+                        <label for="manufacturer3">Porsche</label>
+                    </div>
+                </fieldset>
+                <button class="subm" style="font-size: 0.9rem; margin-top: 0.7rem" type="submit">Применить</button>
+            </form>
+        </aside>
+        <div class="page-content">
+            <h1 class="products-category-header">Машины доступны к аренде</h1>
+            <div class="products-list">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/m8.jpg" alt="car">
+                    </div>
+                    <div class="product-details">
+                        <header>BMW M8</header>
+                        <p class="information">Модель: M8 Competition <br> Год: 2019 <br> Коробка: АТ <br> Мощность: 625
+                            л.с. <br> Привод: Полный <br> Кузов: Купе</p>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">35000&#8381</span><a class="buy" href="rent.html">Арендовать</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cls.jpg" alt="car">
+                    </div>
+                    <div class="product-details">
+                        <header>MB CLS63 AMG</header>
+                        <p class="information">Модель: MB CLS63 AMG (W218) <br> Год: 2014 <br> Коробка: АТ <br>
+                            Мощность: 557 л.с. <br> Привод: Полный <br> Кузов: Седан</p>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">22000&#8381</span><a class="buy" href="rent.html">Арендовать</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/gle.jpg" alt="car">
+                    </div>
+                    <div class="product-details">
+                        <header>MB GLE63 AMG Coupe</header>
+                        <p class="information">Модель: MB GLE63 AMG S (C167) <br> Год: 2020 <br> Коробка: АТ <br>
+                            Мощность: 612 л.с. <br> Привод: Полный <br> Кузов: Внедорожник</p>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">30000&#8381</span><a class="buy" href="rent.html">Арендовать</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/992.jpg" alt="car">
+                    </div>
+                    <div class="product-details">
+                        <header>Porsche 911 Turbo S</header>
+                        <p class="information">Модель: Porsche 911 Turbo S (992) <br> Год: 2020 <br> Коробка: АМТ <br>
+                            Мощность: 650 л.с. <br> Привод: Полный <br> Кузов: Купе</p>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">40000&#8381</span><a class="buy" href="rent.html">Арендовать</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2022 ООО "RENTCAR"
+        </div>
+    </footer>
+</body>
+
+</html>
