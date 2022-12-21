@@ -1,0 +1,60 @@
+.calc-container {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 50px auto;
+    padding: 10px;
+    border: 5px solid darkslategrey;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.screen {
+    width: 270px;
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    height: 60px;
+    padding: 10px;
+    border: 5px solid darkslategrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.screen span {
+    font-size: 4rem; 
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.75rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 5px 5px;
+}
+
+.operation {
+    background-color: orange;
+}
+
+.result {
+    background-color: green;
+}
+
+.clear {
+    background-color: red;
+}
